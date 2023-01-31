@@ -1,5 +1,5 @@
 <h1 style="color:#0070DD">Show/Hide option patch for Multicast Button</h1>
-<h3>Patch for TotemTimers WotLK classic addon v3.1.15</h3>
+<h3>Patch for TotemTimers classic addon v3.1.15, WotLK 3.4.1 (Ulduar)</h3>
 
 ![alt text](https://media.wago.io/screenshots/s5s6LI43_/63d08c4dd37bfaecb7ccffc7.jpg)
 ![alt text](https://media.wago.io/screenshots/s5s6LI43_/63d08a05ec1584e5efa26233.jpg)
@@ -9,7 +9,7 @@
 
 <h2 style="color:#0070DD">Why this patch ?</h2>
 
-Like many other shamans on Azeroth, I much prefer TotemTimers to the default totem bar. But the Multicast Button (with Call of the Elements, etc...) is often not needed... Indeed, once you've bind one totem set, you can change your pre-selected totems by Right-Click. So you may want to disable the Multicast Button ! However, the default option causes <b>a switch to the default totem bar (as written on their CurseForge page), and you're not able to pre-select totems anymore.</b> This patch is a try to do it right, <b>giving you finally a way to show/hide this button while retaining all the good features of TotemTimers</b>.
+Like many other shamans on Azeroth, I much prefer TotemTimers to the default totem bar. <b>But the Multicast Button (with Call of the Elements, etc...) is often not needed...</b> Indeed, once you've bind one totem set, you can change your pre-selected totems in it by Right-Click. So you may want to disable the Multicast Button ! However, the default option causes <b>a switch to the default totem bar (as written on their CurseForge page), and you're not able to pre-select totems anymore.</b> This patch is a try to do it right, <b>giving you finally a way to show/hide this button while retaining all the good features of TotemTimers</b>.
 
 ---
 
