@@ -79,8 +79,7 @@ local function TotemTimers_OnEvent(self, event, ...)
         TotemTimers.InitializeBindings()
     elseif event == "PLAYER_LOGOUT" then
         TotemTimers.SaveFramePositions()
-	end
-
+    end
 end
 
 TotemTimersFrame:SetScript("OnEvent", TotemTimers_OnEvent)

@@ -129,7 +129,7 @@ function TotemTimers.MultiSpellActivate()
         TotemTimers.SetMultiCastConfig()
         --trigger Childupdate("mspell")
         mb:SetAttribute("*spell1", mb:GetAttribute("*spell1"))
-        mb:SetAttribute("active", true)
+        mb:SetAttribute("active", false) --true
 
         MultiCastActionBarFrame:UnregisterEvent("PLAYER_ENTERING_WORLD")
         MultiCastActionBarFrame:UnregisterEvent("UPDATE_MULTI_CAST_ACTIONBAR")
@@ -152,7 +152,6 @@ function TotemTimers.MultiSpellActivate()
     end
     TotemTimers.ProcessSetting("TimerSize")
     TotemTimers.OrderTimers()
-    TotemTimers.SetMulticastDisplay()
 end
 
 function TotemTimers.SetMultiCastSpells()
@@ -167,7 +166,8 @@ end
 table.insert(TotemTimers.SpellUpdaters, TotemTimers.SetMultiCastSpells)
 
 function TotemTimers.SetMultiCastConfig()
-    if not mb.active then
+    TotemTimers.SetMulticastDisplay() --We set the display before this function - Memø 31012023
+    if not mb.active then 
         return
     end   
     for i = 1, 4 do
@@ -209,8 +209,10 @@ function TotemTimers.SetMulticastDisplay()
     MulticastDisplayActive = _G["TotemTimers_MulticastDisplayActive"]
     if not MulticastDisplayActive then
         mb:Hide()
+        --TotemTimers_MultiSpell:Hide()
     else
         mb:Show()  
+        --TotemTimers_MultiSpell:Show()
     end
 end
 

@@ -552,6 +552,23 @@ for i = 1, 4 do
     }
 end
 
+--[[ if LE_EXPANSION_LEVEL_CURRENT > LE_EXPANSION_BURNING_CRUSADE then
+    TotemTimers.options.args.timers.args.multispell = {
+        order = 3,
+        type = "toggle",
+        name = L["Multicast Button and totems pre-selection."],
+        desc = L["Required for \"Show Multicast Button\" option."],
+        set = function(info, val)
+            print("TotemTimers: You might need to relog for the default totem bar to show/hide correctly")
+            TotemTimers.ActiveProfile.MultiCast = val
+            TotemTimers.ProcessSetting("MultiCast")
+        end,
+        get = function(info)
+            return TotemTimers.ActiveProfile.MultiCast
+        end,
+    }
+end ]]
+
 if LE_EXPANSION_LEVEL_CURRENT > LE_EXPANSION_BURNING_CRUSADE then
     TotemTimers.options.args.timers.args.multispell = {
         order = 3,
